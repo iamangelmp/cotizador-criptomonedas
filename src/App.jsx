@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
+import Result from "./components/Result";
 import imagenCripto from "./img/imagen-criptos.png";
 import Form from "./components/Form";
 
@@ -73,6 +74,9 @@ function App() {
       <div>
         <Heading> Cotiza Criptomonedas al Instante</Heading>
         <Form setMonedas={setMonedas} />
+        {Object.keys(resultado).length > 0 ? (
+          <Result resultado={resultado} />
+        ) : null}
       </div>
     </Container>
   );

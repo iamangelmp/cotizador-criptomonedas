@@ -62,7 +62,6 @@ function Form({ setMonedas }) {
     } else {
       setError(false);
       setMonedas({ cripto, moneda });
-      //console.log(cripto, moneda);
     }
   };
 
